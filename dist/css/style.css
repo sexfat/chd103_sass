@@ -19,3 +19,17 @@ body {
   min-height: 500px;
   background-color: #a5ff28;
 }
+.wrapper header {
+  width: 100%;
+  height: 100px;
+  background-color: #163b7b;
+}
+.wrapper header nav ul {
+  list-style: none;
+  display: flex;
+}
+.wrapper header nav ul li {
+  padding: 10px 30px;
+  background-color: #20ea88;
+  text-align: center;
+}
