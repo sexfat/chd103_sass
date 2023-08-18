@@ -40,3 +40,22 @@ function move(){
 }
 
 exports.m = move;
+
+
+//html 架構整合
+
+
+const fileinclude = require('gulp-file-include');  //引入套件
+
+function includeHTML() {
+    return src('src/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('./dist'));
+}
+
+exports.template = includeHTML
+
+

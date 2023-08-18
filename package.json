@@ -23,6 +23,7 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
   }
 }
