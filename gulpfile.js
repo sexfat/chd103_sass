@@ -31,3 +31,12 @@ function taskB(cb){
 
 exports.sync = parallel(taskA , taskB);//同時執行A B任務
 exports.async = series(taskA , taskB);//執行A後再執行B任務
+
+
+//檔案搬家任務
+
+function move(){
+    return src('src/index.html').pipe(dest('dist'))
+}
+
+exports.m = move;
