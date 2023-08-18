@@ -1,12 +1,15 @@
 body {
+  background-color: #e2e2e2;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  line-height: 1.5;
 }
-body h1 {
-  font-size: 40px;
-}
-body .wrappper {
+
+.wrapper {
+  max-width: 1440px;
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
+  min-height: 500px;
+  background-color: #a5ff28;
 }

@@ -56,7 +56,7 @@ function includeHTML() {
         .pipe(dest('./dist'));
 }
 
-exports.template = includeHTML
+exports.html = includeHTML
 
 
 
@@ -74,3 +74,11 @@ function styleSass() {
 exports.style = styleSass
 
 
+//監看所以變動
+
+function watchTask(){
+   watch(['./src/*.html' , './src/layout/*.html'] , includeHTML)
+   watch(['./src/sass/*.scss' , './src/sass/**/*.scss'] , styleSass)
+}
+
+exports.w = watchTask
