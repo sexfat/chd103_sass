@@ -59,3 +59,18 @@ function includeHTML() {
 exports.template = includeHTML
 
 
+
+// sass
+
+const sass = require('gulp-sass')(require('sass'));
+
+
+function styleSass() {
+    return src('./src/sass/*.scss')
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(dest('./dist/css'));
+}
+
+exports.style = styleSass
+
+
