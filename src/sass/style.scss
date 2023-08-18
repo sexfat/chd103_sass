@@ -1,9 +1,30 @@
+// 變數
+/*css 註解*/
+
+// 數值型態
+$fontSize : 20px; // 數值
+$bgcolor : #fffd9f; //color
+$list : 10px 20px; //list
+$map : (
+  key : 'value',
+  large : 50px,
+  medium : 40px,
+  small  : 20px
+);
+
+h1 {
+  font-size: map-get($map, small);
+}
+
+
+
+
 body {
-  background-color: #e2e2e2;
-  font-size: 18px;
+  background-color: $bgcolor;
+  font-size: $fontSize;
   margin: 0;
-  padding: 0;
-  line-height: 1.5;
+  padding: $list;
+  line-height: 1.2;
 }
 .wrapper {
      max-width: 1440px;
