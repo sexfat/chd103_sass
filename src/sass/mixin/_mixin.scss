@@ -57,5 +57,20 @@ a {
   }
 }
 
+@mixin fontWeight($w) {
+  @if $w == bold {
+    font-weight: bold;
+  } @else if $w == default {
+    font-weight: 400;
+  } @else {
+    font-weight: 100;
+  }
+}
 
-
+@mixin fontstyle($style) {
+  @if $style == "zh" {
+    font-family: "Noto Sans TC", sans-serif;
+  } @else if $style == "en" {
+    font-family: "Montserrat", sans-serif;
+  }
+}

@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: $list;
   line-height: 1.2;
+  @include fontstyle(zh);
 }
 
 // .wrapper {

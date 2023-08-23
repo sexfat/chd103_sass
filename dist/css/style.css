@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*css 註解*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+TC:wght@100;400&family=Roboto&display=swap");
 html,
 body,
 div,
@@ -149,6 +150,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.2;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .wrapper_full {
@@ -159,6 +161,11 @@ body {
 h1 {
   font-size: 60px;
   font-weight: 100;
+}
+
+.title {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -239,9 +246,8 @@ div {
   width: 500px;
   height: 90px;
   margin: 100px;
-  font: 3.3333333333px;
 }
 
 .a {
-  color: #000;
+  color: #f20;
 }

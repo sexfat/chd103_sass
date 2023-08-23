@@ -3,3 +3,8 @@ h1 {
   font-size: map-get($map , 'large');
   font-weight: 100;
 }
+
+.title {
+  @include fontWeight(bold);
+  @include fontstyle(en);
+}

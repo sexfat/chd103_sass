@@ -30,40 +30,29 @@
 //plugin
 // @import "plugin/bootstrap";
 
-
 // sass 運算
 
 div {
-  width:  100px + 400px;  //要注意單位
-  height:  100px - 10px;
-  margin:  10 * 10  + px;
-  font : (100 / 30) + px;// 除法要注意
+  width: 100px + 400px; //要注意單位
+  height: 100px - 10px;
+  margin: 10 * 10 + px;
+  //font : (100 / 30) + px;// 除法要注意
 }
 
 // @if @else @else if
 
-$color : true;
-// @if $color {
-//    .a {
-//      color : black
-//    }
-// }@else {
-//     .a {
-//      color: #f20;
-
-//     }
-// }
-
-.a {
-  @if $color {
-    color : #000;
-  }@else {
-    color : #f20
+$color: red;
+@if $color == black {
+  .a {
+    color: black;
+  }
+} @else if $color == red {
+  .a {
+    color: #f20;
   }
 }
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+TC:wght@100;400&family=Roboto&display=swap');
 
 
 
