@@ -150,15 +150,28 @@ a:hover {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.43px;
-  width: 180px;
-  height: 60px;
 }
 
 .btn_default {
+  width: 150px;
+  height: 40px;
+}
+
+.btn_sm {
+  width: 100px;
+  height: 40px;
+}
+
+.btn_xl {
+  width: 200px;
+  height: 40px;
+}
+
+.btn_primary {
   border: 1px solid #0700d1;
   color: #0700d1;
 }
-.btn_default:hover {
+.btn_primary:hover {
   background-color: #0700d1;
   color: #fff;
 }
@@ -173,11 +186,12 @@ a:hover {
 }
 
 .btn_fail {
-  background-color: #01d21d;
-  color: #fff;
+  border: 1px solid #01d21d;
+  color: #01d21d;
 }
 .btn_fail:hover {
-  background-color: #019f16;
+  background-color: #01d21d;
+  color: #fff;
 }
 
 .btn_radius {

@@ -85,9 +85,19 @@ a {
    }
 }
 
-// .btn {
-//   @include border(#f50909 , true);
-//   padding: 40px 10px;
-//   line-height: 1.2;
-//   text-align: center;
-// }
+@mixin btnColor($bgc , $border: false) {
+  @if $border {
+    border: 1px solid $bgc;
+    color: $bgc;
+    &:hover {
+      background-color: $bgc;
+      color: #fff
+    }
+  } @else {
+    background-color: $bgc;
+    color: #fff;
+    &:hover {
+      background-color: darken($bgc, 10);
+    }
+  }
+}

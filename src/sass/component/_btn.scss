@@ -1,36 +1,36 @@
+// .boxcolor {
+//   background-color: lighten(#000 , 100);
+//   @include rect(100px , 200px);
+// }
+
+//按鈕的基本結構
 .btn {
   cursor: pointer;
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
   letter-spacing: 0.43px;
-  width: 180px;
-  height: 60px;
 }
 
-@mixin btnColor($bgc , $border: false) {
-  @if $border {
-    border: 1px solid $bgc;
-    color: $bgc;
-    &:hover {
-      background-color: $bgc;
-      color: #fff
-    }
-  } @else {
-    background-color: $bgc;
-    color: #fff;
-    &:hover {
-      background-color: darken($bgc, 10);
-    }
-  }
-}
 
-// .boxcolor {
-//   background-color: lighten(#000 , 100);
-//   @include rect(100px , 200px);
-// }
-
+//按鈕的尺寸
 .btn_default {
+   width: 150px;
+   height: 40px
+}
+
+.btn_sm {
+   width: 100px;
+   height: 40px
+}
+
+.btn_xl {
+   width: 200px;
+   height: 40px
+}
+
+//按鈕的顏色
+.btn_primary {
   @include btnColor(#0700d1 , true);
 }
 
@@ -39,7 +39,7 @@
 }
 
 .btn_fail {
-   @include btnColor(#01d21d);
+   @include btnColor(#01d21d , true);
 }
 
 //圓角
