@@ -144,6 +144,14 @@ a:hover {
   color: #999;
 }
 
+.btn {
+  border: 1px solid #f50909;
+  border-radius: 6px;
+  padding: 40px 10px;
+  line-height: 1.2;
+  text-align: center;
+}
+
 body {
   background-color: #fffd9f;
   font-size: 20px;
