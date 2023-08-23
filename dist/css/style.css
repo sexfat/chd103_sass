@@ -145,11 +145,47 @@ a:hover {
 }
 
 .btn {
-  border: 1px solid #f50909;
-  border-radius: 6px;
-  padding: 40px 10px;
-  line-height: 1.2;
-  text-align: center;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.43px;
+  width: 180px;
+  height: 60px;
+}
+
+.btn_default {
+  border: 1px solid #0700d1;
+  color: #0700d1;
+}
+.btn_default:hover {
+  background-color: #0700d1;
+  color: #fff;
+}
+
+.btn_error {
+  border: 1px solid #c02300;
+  color: #c02300;
+}
+.btn_error:hover {
+  background-color: #c02300;
+  color: #fff;
+}
+
+.btn_fail {
+  background-color: #01d21d;
+  color: #fff;
+}
+.btn_fail:hover {
+  background-color: #019f16;
+}
+
+.btn_radius {
+  border-radius: 10px;
+}
+
+.btn_rounded {
+  border-radius: 30px;
 }
 
 body {
@@ -248,12 +284,6 @@ footer {
 
 .product h1 {
   color: #c700d2;
-}
-
-div {
-  width: 500px;
-  height: 90px;
-  margin: 100px;
 }
 
 .a {
