@@ -1,0 +1,15 @@
+.about {
+  //關於我們
+  h1 {
+    color: #0026ff;
+    font-size: 50px;
+  }
+  .box1 {
+    @include rect(400px);
+  }
+  section {
+    @include layout(1320px);
+    background-color: #1e6b00;
+    height: 300px;
+  }
+}

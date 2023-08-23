@@ -1,54 +1,34 @@
 // 變數
 /*css 註解*/
 
-// 數值型態
-$fontSize: 20px; // 數值
-$bgcolor: #fffd9f; //color
-$list: 10px 20px; //list
-$map: (
-  key: "value",
-  large: 50px,
-  medium: 40px,
-  small: 20px,
-);
+//共用變數
+@import "base/color";
+@import "base/font";
+@import "base/var";
+@import "base/reset";
 
-h1 {
-  $a: 10px; //區域變數
-  font-size: map-get($map, small);
-}
+// function
+@import "mixin/mixin";
 
-//取不到值
-// h2 {
-//    font-size:  $a;
-// }
+//component
+@import "component/btn";
+@import "component/card";
+@import "component/form";
+@import "component/body";
+@import "component/title";
 
-body {
-  background-color: $bgcolor;
-  font-size: $fontSize;
-  margin: 0;
-  padding: $list;
-  line-height: 1.2;
-}
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
-  min-height: 500px;
-  background-color: #a5ff28;
-  header {
-    width: 100%;
-    height: 100px;
-    background-color: #163b7b;
-    nav {
-      ul {
-        list-style: none;
-        display: flex;
-        li {
-          padding: 10px 30px;
-          background-color: #20ea88;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
+// layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/login";
+
+// page
+@import "page/index";
+@import "page/about";
+@import "page/product";
+
+//plugin
+// @import "plugin/bootstrap";
+
+
+

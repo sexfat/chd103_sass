@@ -1,0 +1,16 @@
+.index {
+  //首頁
+  h1 {
+    color: #f2ff00;
+  }
+  .box {
+    @include center(400px);
+    background-color: #aa00ff;
+  }
+
+  .component {
+    @include center(100%, 300px);
+    padding: 10px;
+    background-color: #1100ff;
+  }
+}

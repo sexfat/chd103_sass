@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*css 註解*/
 html,
 body,
 div,
@@ -88,7 +86,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -103,21 +100,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -125,86 +118,10 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 * {
   box-sizing: border-box;
-}
-
-body {
-  background-color: #fffd9f;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-}
-
-.wrapper_full {
-  width: 100%;
-  padding: 10px 20px;
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 100;
-}
-
-header {
-  width: 100%;
-  background-color: #ffb302;
-}
-header nav ul {
-  list-style: none;
-  display: flex;
-}
-header nav ul li {
-  padding: 10px 30px;
-  background-color: #20ea88;
-  text-align: center;
-}
-
-footer {
-  width: 100%;
-  background-color: #060162;
-  color: #fff;
-}
-
-.index h1 {
-  color: #f2ff00;
-}
-.index .box {
-  margin: 0 auto;
-  width: 400px;
-  background-color: #aa00ff;
-}
-.index .component {
-  margin: 0 auto;
-  width: 100%;
-  height: 300px;
-  padding: 10px;
-  background-color: #1100ff;
-}
-
-.about h1 {
-  color: #0026ff;
-  font-size: 50px;
-}
-.about .box1 {
-  width: 400px;
-  height: 400px;
-}
-.about section {
-  max-width: 1320px;
-  margin: 0 auto;
-  width: 100%;
-  background-color: #1e6b00;
-  height: 300px;
-}
-
-.product h1 {
-  color: #c700d2;
 }

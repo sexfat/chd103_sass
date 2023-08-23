@@ -1,0 +1,25 @@
+// 置中
+@mixin center($w, $h: null) {
+  margin: 0 auto;
+  width: $w;
+  height: $h;
+}
+
+
+// 方形
+@mixin rect($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+
+// layout
+@mixin layout($w) {
+    @if $w == 100% {
+      width: 100%;
+    } @else {
+      max-width: $w;
+      margin: 0 auto;
+      width: 100%;
+    }
+}
