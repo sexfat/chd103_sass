@@ -234,3 +234,14 @@ footer {
 .product h1 {
   color: #c700d2;
 }
+
+div {
+  width: 500px;
+  height: 90px;
+  margin: 100px;
+  font: 3.3333333333px;
+}
+
+.a {
+  color: #000;
+}

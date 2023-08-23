@@ -31,4 +31,41 @@
 // @import "plugin/bootstrap";
 
 
+// sass 運算
+
+div {
+  width:  100px + 400px;  //要注意單位
+  height:  100px - 10px;
+  margin:  10 * 10  + px;
+  font : (100 / 30) + px;// 除法要注意
+}
+
+// @if @else @else if
+
+$color : true;
+// @if $color {
+//    .a {
+//      color : black
+//    }
+// }@else {
+//     .a {
+//      color: #f20;
+
+//     }
+// }
+
+.a {
+  @if $color {
+    color : #000;
+  }@else {
+    color : #f20
+  }
+}
+
+
+
+
+
+
+
 
