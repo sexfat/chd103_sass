@@ -5,21 +5,58 @@
   height: $h;
 }
 
-
 // 方形
 @mixin rect($w, $h: $w) {
   width: $w;
   height: $h;
 }
 
-
 // layout
 @mixin layout($w) {
-    @if $w == 100% {
-      width: 100%;
-    } @else {
-      max-width: $w;
-      margin: 0 auto;
-      width: 100%;
-    }
+  @if $w == 100% {
+    width: 100%;
+  } @else {
+    max-width: $w;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
+
+@mixin a() {
+  font-size: 20px;
+  &:hover {
+    @content;
+  }
+}
+
+a {
+  color: #333;
+  @include a() {
+    color: #999;
+  }
+}
+
+@mixin m() {
+  @media all and (max-width: $m) {
+    // 手機板
+    @content;
+  }
+}
+
+@mixin t() {
+  @media all and (max-width: $t) {
+    // 平板
+    @content;
+  }
+}
+
+
+@mixin set($val) {
+  @media all and (max-width: $val) {
+    // 客製化
+    @content;
+  }
+}
+
+
+

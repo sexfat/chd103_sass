@@ -1,15 +1,32 @@
   header {
     width: 100%;
     background-color: #ffb302;
+    @include t(){
+     background-color: #86a400; 
+    }
     nav {
       ul {
         list-style: none;
         display: flex;
+        @include set(700px){
+          display: none;
+        }
         li {
           padding: 10px 30px;
           background-color: #20ea88;
+          @include t(){
+            background-color: #024c64;
+            a {
+            color : #fff;
+            }
+          }
           text-align: center;
         }
       }
     }
   }
+
+
+
+
+

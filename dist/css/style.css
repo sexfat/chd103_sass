@@ -135,6 +135,14 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  color: #333;
+  font-size: 20px;
+}
+a:hover {
+  color: #999;
+}
+
 body {
   background-color: #fffd9f;
   font-size: 20px;
@@ -157,14 +165,32 @@ header {
   width: 100%;
   background-color: #ffb302;
 }
+@media all and (max-width: 996px) {
+  header {
+    background-color: #86a400;
+  }
+}
 header nav ul {
   list-style: none;
   display: flex;
+}
+@media all and (max-width: 700px) {
+  header nav ul {
+    display: none;
+  }
 }
 header nav ul li {
   padding: 10px 30px;
   background-color: #20ea88;
   text-align: center;
+}
+@media all and (max-width: 996px) {
+  header nav ul li {
+    background-color: #024c64;
+  }
+  header nav ul li a {
+    color: #fff;
+  }
 }
 
 footer {
