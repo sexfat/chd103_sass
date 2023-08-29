@@ -1,14 +1,6 @@
 @charset "UTF-8";
 /*css 註解*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+TC:wght@100;400&family=Roboto&display=swap");
-.primary {
-  background-color: #2d55f6;
-}
-
-.secondary {
-  background-color: #fa6464;
-}
-
 html,
 body,
 div,
@@ -232,6 +224,70 @@ h1 {
 .title {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+span {
+  font-size: 14px;
+}
+
+div {
+  font-size: 16px;
+}
+
+.title_h2 {
+  font-size: 38px;
+}
+
+.primary_bg {
+  background-color: #4b4efc;
+}
+
+.primary_color {
+  color: #4b4efc;
+}
+
+.secondary_bg {
+  background-color: #aa72f8;
+}
+
+.secondary_color {
+  color: #aa72f8;
+}
+
+.success_bg {
+  background-color: #4ade80;
+}
+
+.success_color {
+  color: #4ade80;
+}
+
+.warning_bg {
+  background-color: #F59E0B;
+}
+
+.warning_color {
+  color: #F59E0B;
+}
+
+.error_bg {
+  background-color: #EF4444;
+}
+
+.error_color {
+  color: #EF4444;
 }
 
 .container {
@@ -556,26 +612,42 @@ footer {
   color: #f20;
 }
 
-h1 {
-  font-size: 50px;
+.border-radius-1 {
+  border-radius: 4px;
 }
 
-h2 {
-  font-size: 46px;
+.border-radius-2 {
+  border-radius: 8px;
 }
 
-h3 {
-  font-size: 36px;
+.border-radius-3 {
+  border-radius: 12px;
 }
 
-span {
-  font-size: 14px;
+.border-radius-4 {
+  border-radius: 16px;
 }
 
-div {
-  font-size: 16px;
+.border-radius-5 {
+  border-radius: 20px;
 }
 
-.title_h2 {
-  font-size: 38px;
+.border-radius-6 {
+  border-radius: 24px;
+}
+
+.border-radius-7 {
+  border-radius: 28px;
+}
+
+.border-radius-8 {
+  border-radius: 32px;
+}
+
+.border-radius-9 {
+  border-radius: 36px;
+}
+
+.border-radius-10 {
+  border-radius: 40px;
 }

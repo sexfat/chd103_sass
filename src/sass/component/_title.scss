@@ -8,3 +8,21 @@ h1 {
   @include fontWeight(bold);
   @include fontstyle(en);
 }
+
+
+
+@each $k, $v in $fontsizes {
+  #{$k} {
+    font-size: $v;
+  }
+}
+
+
+@each $k, $v in $color {
+  .#{$k}_bg {
+    background-color: $v;
+  }
+  .#{$k}_color {
+     color: $v
+  }
+}

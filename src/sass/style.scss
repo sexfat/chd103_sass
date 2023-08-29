@@ -58,20 +58,11 @@ $color: red;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+TC:wght@100;400&family=Roboto&display=swap");
 
 
-$fontsizes : (
-//  '.key' : value,
- 'h1' : 50px,
- 'h2' : 46px,
- 'h3' : 36px,
- 'span' : 14px,
- 'div' : 16px,
- '.title_h2' : 38px
 
-); // map 
 
-@each $k , $v in $fontsizes{
-   #{$k} {
-      font-size: $v;
-   } 
+// spacing 
+@for $i from 1 through 10 {
+  .border-radius-#{$i} {
+      border-radius: $i * 4px;
+  }
 }
-
