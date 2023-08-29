@@ -168,3 +168,14 @@ a {
     }
   }
 }
+
+//背景圖片路徑
+@mixin img($class) {
+  @each $img in $class {
+    .img_#{$img} {
+      background-image: url("images/#{$img}.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

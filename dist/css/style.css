@@ -462,6 +462,22 @@ h1 {
     width: 16.66666%;
   }
 }
+.banner .img_slider1 {
+  background-image: url("images/slider1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .img_slider2 {
+  background-image: url("images/slider2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .img_slider3 {
+  background-image: url("images/slider3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   width: 100%;
   background-color: #ffb302;
@@ -540,18 +556,26 @@ footer {
   color: #f20;
 }
 
-.banner .img_slider1 {
-  background-image: url("images/slider1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+h1 {
+  font-size: 50px;
 }
-.banner .img_slider2 {
-  background-image: url("images/slider2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+h2 {
+  font-size: 46px;
 }
-.banner .img_slider3 {
-  background-image: url("images/slider3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+h3 {
+  font-size: 36px;
+}
+
+span {
+  font-size: 14px;
+}
+
+div {
+  font-size: 16px;
+}
+
+.title_h2 {
+  font-size: 38px;
 }
