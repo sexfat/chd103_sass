@@ -25,17 +25,24 @@
 //  origin
 
 @for $i from 1 through 12 {
-  //桌機  
+  //桌機
   .col-#{$i} {
     width: ($i / 12) * 100%;
   }
-  //平版
+
+  //手機
+}
+
+//平版
+@for $i from 1 through 12 {
   @include t() {
     .col-md-#{$i} {
       width: ($i / 12) * 100%;
     }
   }
-  //手機
+}
+
+@for $i from 1 through 12 {
   @include m() {
     .col-sm-#{$i} {
       width: ($i / 12) * 100%;
@@ -43,8 +50,9 @@
   }
 }
 
-
 /* row-col */
+
+
 .row-cols-1 > .col {
   width: 100%;
 }
