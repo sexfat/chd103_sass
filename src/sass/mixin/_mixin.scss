@@ -142,3 +142,29 @@ a {
     }
   }
 }
+
+
+//========== grid =========
+// @include grid(12); 桌機
+// @include t() {
+//   @include grid(12 , md);
+// }  平板
+
+// @include m(){
+//    @include grid(12, sm);
+// } 手機
+
+
+@mixin grid($val, $class: default) {
+  @for $i from 1 through $val {
+    @if $class == default {
+      .col-#{$i} {
+        width: ($i/ $val) * 100%;
+      }
+    } @else {
+      .col-#{$class}-#{$i} {
+        width: ($i/ $val) * 100%;
+      }
+    }
+  }
+}

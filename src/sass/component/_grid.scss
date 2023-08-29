@@ -22,36 +22,39 @@
   box-sizing: border-box;
 }
 
-//  origin
 
-@for $i from 1 through 12 {
-  //桌機
-  .col-#{$i} {
-    width: ($i / 12) * 100%;
-  }
+@include grid(12); //桌機
+@include t() {
+  @include grid(12 , md);
+} //平板
 
-  //手機
-}
+@include m(){
+   @include grid(12, sm);
+}//手機
+
+//桌機
+// @for $i from 1 through 12 {
+//   .col-#{$i} {
+//     width: ($i / 12) * 100%;
+//   }
+// }
 
 //平版
-@for $i from 1 through 12 {
-  @include t() {
-    .col-md-#{$i} {
-      width: ($i / 12) * 100%;
-    }
-  }
-}
-
-@for $i from 1 through 12 {
-  @include m() {
-    .col-sm-#{$i} {
-      width: ($i / 12) * 100%;
-    }
-  }
-}
-
-/* row-col */
-
+// @for $i from 1 through 12 {
+//   @include t() {
+//     .col-md-#{$i} {
+//       width: ($i / 12) * 100%;
+//     }
+//   }
+// }
+//手機
+// @for $i from 1 through 12 {
+//   @include m() {
+//     .col-sm-#{$i} {
+//       width: ($i / 12) * 100%;
+//     }
+//   }
+// }
 
 .row-cols-1 > .col {
   width: 100%;
