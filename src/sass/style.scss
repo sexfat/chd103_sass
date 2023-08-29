@@ -57,12 +57,31 @@ $color: red;
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+TC:wght@100;400&family=Roboto&display=swap");
 
-
-
-
-// spacing 
+// spacing
 @for $i from 1 through 10 {
   .border-radius-#{$i} {
-      border-radius: $i * 4px;
+    border-radius: $i * 4px;
+  }
+}
+
+header {
+  display: flex;
+  width: 1920px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  .logo {
+    width: 102px;
+    height: 72px;
+  }
+  nav {
+    display: flex;
+    width: 325px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0px 13px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
   }
 }

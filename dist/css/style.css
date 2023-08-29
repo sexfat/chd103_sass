@@ -651,3 +651,25 @@ footer {
 .border-radius-10 {
   border-radius: 40px;
 }
+
+header {
+  display: flex;
+  width: 1920px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .logo {
+  width: 102px;
+  height: 72px;
+}
+header nav {
+  display: flex;
+  width: 325px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0px 13px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
