@@ -56,6 +56,15 @@ $color: red;
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+TC:wght@100;400&family=Roboto&display=swap");
 
-//變數轉型 : url路徑 / class 名稱 / 屬性名稱 都需要使用字串轉變數 #{變數}
+
+$class : a1 a2 b1 banner1 banner2 banner3 banner4 slider1; // list
+
+@each $img in $class  {
+   .img_#{$img} {
+       background-image: url('images/#{$img}.jpg');
+       background-repeat: no-repeat;
+   }
+}
+
 
 

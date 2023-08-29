@@ -539,3 +539,43 @@ footer {
 .a {
   color: #f20;
 }
+
+.img_a1 {
+  background-image: url("images/a1.jpg");
+  background-repeat: no-repeat;
+}
+
+.img_a2 {
+  background-image: url("images/a2.jpg");
+  background-repeat: no-repeat;
+}
+
+.img_b1 {
+  background-image: url("images/b1.jpg");
+  background-repeat: no-repeat;
+}
+
+.img_banner1 {
+  background-image: url("images/banner1.jpg");
+  background-repeat: no-repeat;
+}
+
+.img_banner2 {
+  background-image: url("images/banner2.jpg");
+  background-repeat: no-repeat;
+}
+
+.img_banner3 {
+  background-image: url("images/banner3.jpg");
+  background-repeat: no-repeat;
+}
+
+.img_banner4 {
+  background-image: url("images/banner4.jpg");
+  background-repeat: no-repeat;
+}
+
+.img_slider1 {
+  background-image: url("images/slider1.jpg");
+  background-repeat: no-repeat;
+}
