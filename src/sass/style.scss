@@ -16,6 +16,7 @@
 @import "component/form";
 @import "component/body";
 @import "component/title";
+@import "component/spacing";
 
 // layout
 @import "layout/header";
@@ -56,42 +57,4 @@ $color: red;
 
 //變數轉型 : url路徑 / class 名稱 / 屬性名稱 都需要使用字串轉變數 #{變數}
 
-// space
-@mixin spacing($val , $position:true) {
-  @for $i from 1 through $val {
-    .top_#{$i} {
-      @if $position {
-           position: relative;
-           top : $i + px
-      }@else {
-         margin-top: $i + px;
-      }
-    }
-    .bottom_#{$i} {
-     @if $position {
-           position: relative;
-           bottom : $i + px
-      }@else {
-         margin-bottom: $i + px;
-      }
-    }
-    .left_#{$i} {
-      @if $position {
-           position: relative;
-           left : $i + px
-      }@else {
-         margin-left: $i + px;
-      }
-    }
-    .right_#{$i} {
-      @if $position {
-           position: relative;
-           right : $i + px
-      }@else {
-         margin-right: $i + px;
-      }
-    }
-  }
-}
-// if true => position  false => margin
-@include spacing(100 , true)
+
